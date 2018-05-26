@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EtherSports</title>
+    <style>
+        body {
+            font-size: 12px;
+            font-family: 'Microsoft YaHei UI', sans-serif;
+            line-height: 1.5em;
+            padding: 0 1em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            width: 50%;
+            color: #CCC;
+            border-top: 1px solid #CCC;
+            border-bottom: none;
+        }
+
+        .color-gray {
+            color: #999;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .header, .teams-detail, .pool, .footer {
+            text-align: center;
+        }
+
+        .header > div, .teams-detail > div, .pool > div {
+            display: inline-block;
+        }
+
+        .teams {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 1em 2em;
+            margin: 1.5em 0 2em 0;
+            height: 170px;
+        }
+
+        .poll-win {
+            font-size: larger;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+
+        .btn-blue {
+            padding: 2px 5px;
+            color: #1F2B72;
+            border: 1px solid #1F2B72;
+            border-radius: 5px;
+        }
+
+        .btn-red {
+            padding: 2px 5px;
+            color: #DB241D;
+            border: 1px solid #DB241D;
+            border-radius: 5px;
+        }
+
+        .address {
+            color: #999;
+            font-family: monospace;
+            font-size: 10px;
+            line-height: 1em;
+            margin: 2em 0;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <p>以太坊<br/>大竞猜</p>
+    </div>
+    <div>
+        <p>
+            欧洲冠军杯联赛<br/>
+            <span class="color-gray">UEFA Champions League</span>
+        </p>
+        <img src="img/short_line.png"/>
+    </div>
+    <div class="right">
+        <img src="img/logo_league.png" style="width:50px;margin-top:8px;"/>
+    </div>
+</div>
+<div class="teams">
+    <div class="teams-detail">
+        <div class="left">
+            <p><img src="img/team_huagma.png" style="width:100px;"/></p>
+            <p>
+                皇家马德里<br/>
+                <span class="color-gray">Real Madrid</span>
+            </p>
+        </div>
+        <div>
+            <p class="color-gray" style="margin-top:50px;font-size:larger;">VS</p>
+            <p style="color:#1F2B72;">02:45 AM<br/>May 26<br/>2018</p>
+        </div>
+        <div class="right">
+            <p><img src="img/team_liwupu.png" style="width:100px;"/></p>
+            <p>
+                利物浦<br/>
+                <span class="color-gray">Liverpool</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="pool">
+    <div style="width:40%;">
+        <p class="poll-win" style="color:#1F2B72;">猜皇马夺冠</p>
+        <p style="margin-top:5px;">转 ETH 至</p>
+        <p><img src="img/qrcode_rm.png" style="width:100px;"/></p>
+        <p class="address">0x10eed7e3d9c735B594d50381EE6646282538FB19</p>
+        <p><a href="https://etherscan.io/address/0x10eed7e3d9c735B594d50381EE6646282538FB19" target="_blank" class="btn-blue">查看奖励池</a></p>
+    </div>
+    <div style="width:10%;overflow:hidden;height:220px;">
+        <img src="img/long_interval.png"/>
+    </div>
+    <div style="width:40%;">
+        <p class="poll-win" style="color:#DB241D;">猜利物浦夺冠</p>
+        <p style="margin-top:5px;">转 ETH 至</p>
+        <p><img src="img/qrcode_lp.png" style="width:100px;"/></p>
+        <p class="address">0x15B5D94CabA613597003642F36836A9e178367f3</p>
+        <p><a href="https://etherscan.io/address/0x15B5D94CabA613597003642F36836A9e178367f3" target="_blank" class="btn-red">查看奖励池</a></p>
+    </div>
+</div>
+<hr/>
+<div class="footer">
+    <h3>竞猜玩法</h3>
+    <ul style="text-align:left;color:gray;font-size:10px;margin-left:-30px;">
+        <li>用 imtoken 或其它本地钱包向您支持的球队地址中转入 ETH，请注意不要使用交易所钱包，否则可能无法收到奖励。</li>
+        <li>竞猜时间截止于开赛时刻 (02:45AM)，以转账发起时间为准。</li>
+        <li>奖励比例由开赛时刻双方奖励币池的 ETH 数量决定，夺冠球队的支持者将按竞猜投入比例分享双方奖励池。</li>
+        <li>比赛结束后系统会立即计算奖励并将 ETH 转至竞猜时的转入地址。</li>
+        <li>开赛时刻之后的转账将视为无效，不计入奖励池，比赛结束后原路退回。</li>
+    </ul>
+    <p style="color:#CCC;font-size:10px;margin-top:10px;">本应用由马来西亚云顶集团与澳门太阳城集团提供支持</p>
+</div>
+</body>
+</html>
